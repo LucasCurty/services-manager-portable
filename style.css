@@ -1,0 +1,29 @@
+.service-row {
+  min-height: 56px;
+}
+
+.docker-row {
+  background-color: alpha(@accent_bg_color, 0.05);
+}
+
+.health-badge {
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.health-badge.healthy {
+  background-color: @success_color;
+  color: white;
+}
+
+.health-badge.unhealthy {
+  background-color: @error_color;
+  color: white;
+}
+
+.health-badge.unknown {
+  background-color: @dim_color;
+  color: white;
+}
